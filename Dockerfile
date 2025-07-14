@@ -27,4 +27,4 @@ VOLUME ["/app/pb_data"]
 EXPOSE $PORT
 
 # Start the application
-CMD ["/app/start.sh"]
+CMD ["/app/DockerStart.sh"]

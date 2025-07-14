@@ -1,4 +1,4 @@
-/// <reference path="../../otoolkit-pb/pb_data/types.d.ts" />
+/// <reference path="../pb_data/types.d.ts" />
 
 const SuperuserEmail = $os.getenv("PB_SUPERUSER_EMAIL") || "";
 const SuperuserPassword = $os.getenv("PB_SUPERUSER_PASSWORD") || "";
