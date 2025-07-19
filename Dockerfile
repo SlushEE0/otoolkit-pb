@@ -22,7 +22,6 @@ RUN chmod +x /app/pocketbase
 RUN chmod +x /app/start.sh
 
 # Mount pb_data directory as a volume for persistent storage
-# VOLUME ["/app/pb_data"]
 
 EXPOSE $PORT
 
