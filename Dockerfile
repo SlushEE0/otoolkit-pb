@@ -19,11 +19,10 @@ ADD https://github.com/pocketbase/pocketbase/releases/download/v${PB_VERSION}/po
 RUN unzip /tmp/pb.zip -d /app/ && rm /tmp/pb.zip
 RUN chmod +x /app/pocketbase
 
-RUN chmod +x /app/start.sh
-
-# Mount pb_data directory as a volume for persistent storage
+RUN cd /app
+RUN chmod +x ./LocalStart.sh
 
 EXPOSE $PORT
 
 # Start the application
-CMD ["/app/start.sh"]
+CMD ["/app/LocalStart.sh"]
