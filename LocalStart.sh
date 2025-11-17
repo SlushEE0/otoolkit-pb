@@ -7,4 +7,4 @@ fi
 set +a
 
 PORT=${PB_SERVE_PORT:-30090}
-exec ./pocketbase serve --http=0.0.0.0:${PORT}
+exec ./pocketbase serve --http=0.0.0.0:${PORT} --dev
